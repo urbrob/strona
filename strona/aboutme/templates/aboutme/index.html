@@ -1,0 +1,13 @@
+<h1>Czesc! Zostaw o sobie kilka informacji</h1>
+
+<p><strong>{{ error_message }}</strong></p>
+
+<form action="" method="POST" >
+    {% csrf_token %}
+    <label> Imię <input type="text" name="first_name" placeholder="Jak masz na imię?"></label><br><br>
+    <label> Nazwisko <input type="text" name="last_name" placeholder="Jak masz na nazwisko?"></label><br><br>
+    <label> Wiek <input type="number" name="age" step="1"></label><br><br>
+    <label> Data urodzin <input type="date" name="bd_date"></label><br><br>
+
+<input type="submit" value="Zapisz dane"><br><br>
+</form>
