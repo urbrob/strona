@@ -1,0 +1,10 @@
+{% extends "easy_pdf/base.html" %}
+
+{% block content %}
+    <div id="content">
+        <p>Name: {{object.first_name}}</p>
+        <p>Surname: {{object.last_name}}</p>
+        <p>Age: {{object.age}}</p>
+        <p>Birthday: {{object.bd_date}}</p>
+    </div>
+{% endblock %}
