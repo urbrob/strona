@@ -1,0 +1,6 @@
+Pdf lists: </br>
+<ul style="list-style-type:disc;">
+  {% for pdf in pdfs %}
+    <li><a href='http://localhost:8000/pdf/{{pdf.id}}.pdf'>{{pdf.first_name}} {{pdf.last_name}}</a></li>
+  {% endfor %}
+</ul>
